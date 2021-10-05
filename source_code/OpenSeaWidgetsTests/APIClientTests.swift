@@ -1,12 +1,12 @@
 //
 //  APIClientTests.swift
-//  RickMortyTests
+//  OpenSeaWidgetsTests
 //
 //  Created by Oleksii Skliarenko on 06.07.2021.
 //
 
 import XCTest
-@testable import RickMorty
+@testable import OpenSeaWidgets
 
 class APIClientTests: XCTestCase {
     var apiClient: APIClient!

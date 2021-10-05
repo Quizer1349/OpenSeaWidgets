@@ -1,6 +1,6 @@
 //
 //  HomeViewModel.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 02.07.2021.
 //
@@ -24,10 +24,10 @@ protocol CharactersViewModelOutput {
 
 protocol CharactersViewModelProtocol: CharactersViewModelInput, CharactersViewModelOutput {}
 
-typealias CaracterCellConfig = TableCellConfigurator<CharacterTableCell, AssetViewModel>
+typealias CaracterCellConfig = TableCellConfigurator<FeedTableCell, AssetViewModel>
 typealias LoadingCellConfig = TableCellConfigurator<LoadingTableCell, Bool>
 
-class CharactersViewModel: CharactersViewModelProtocol {
+class AssetsListViewModel: CharactersViewModelProtocol {
     weak var delegate: CharactersViewModelDelegate?
     
     private var cellsItems: [CellConfigurator] = [CellConfigurator]()

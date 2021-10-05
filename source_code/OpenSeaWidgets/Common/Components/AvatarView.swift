@@ -1,6 +1,6 @@
 //
 //  AvatarView.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 04.07.2021.
 //

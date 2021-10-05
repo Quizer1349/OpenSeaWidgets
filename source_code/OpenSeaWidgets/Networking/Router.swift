@@ -1,6 +1,6 @@
 //
 //  Router.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 06.07.2021.
 //
@@ -51,6 +51,7 @@ class Router<Endpoint: EndpointProtocol>: RouterProtocol {
           let result = try JSONDecoder().decode(T.self, from: data)
           completion(.success(result))
         } catch {
+          print(">>> JSONDecoder().decode failed", error)
           completion(.failure(.jsonDecodeError(message: error.localizedDescription)))
         }
       })

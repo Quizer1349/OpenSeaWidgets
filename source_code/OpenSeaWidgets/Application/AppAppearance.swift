@@ -1,6 +1,6 @@
 //
 //  AppAppearance.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 05.07.2021.
 //
@@ -15,10 +15,9 @@ struct AppAppearance {
     
     private static func setupNavBar() {
         let appearance = UINavigationBarAppearance()
-        let titleAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        let titleAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         appearance.titleTextAttributes = titleAttributes
         appearance.largeTitleTextAttributes = titleAttributes
-        appearance.backgroundColor = Configs.Colors.pink
         
         UINavigationBar.appearance().prefersLargeTitles = true
         UINavigationBar.appearance().standardAppearance = appearance

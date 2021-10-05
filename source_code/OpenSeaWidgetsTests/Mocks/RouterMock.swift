@@ -1,13 +1,13 @@
 //
 //  RouterMock.swift
-//  RickMortyTests
+//  OpenSeaWidgetsTests
 //
 //  Created by Oleksii Skliarenko on 06.07.2021.
 //
 
 import XCTest
 
-@testable import RickMorty
+@testable import OpenSeaWidgets
 
 enum RouterMock {
   case get

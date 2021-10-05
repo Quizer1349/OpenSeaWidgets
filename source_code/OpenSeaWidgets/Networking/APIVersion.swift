@@ -1,6 +1,6 @@
 //
 //  APIVersion.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 04.10.2021.
 //

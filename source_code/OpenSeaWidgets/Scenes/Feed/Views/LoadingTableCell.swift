@@ -1,6 +1,6 @@
 //
 //  LoadingTableCell.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 03.07.2021.
 //

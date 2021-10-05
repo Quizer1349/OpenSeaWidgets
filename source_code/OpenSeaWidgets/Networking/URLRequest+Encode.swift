@@ -1,6 +1,6 @@
 //
 //  URLRequest+Encode.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 30.06.2021.
 //

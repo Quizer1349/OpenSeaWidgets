@@ -1,13 +1,13 @@
 //
-//  RickMortyUITests.swift
-//  RickMortyUITests
+//  OpenSeaWidgetsUITests.swift
+//  OpenSeaWidgetsUITests
 //
 //  Created by Oleksii Skliarenko on 30.06.2021.
 //
 
 import XCTest
 
-class RickMortyUITests: XCTestCase {
+class OpenSeaWidgetsUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

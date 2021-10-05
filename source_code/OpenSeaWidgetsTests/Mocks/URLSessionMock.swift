@@ -1,12 +1,12 @@
 //
 //  URLSessionMock.swift
-//  RickMortyTests
+//  OpenSeaWidgetsTests
 //
 //  Created by Oleksii Skliarenko on 06.07.2021.
 //
 
 import Foundation
-@testable import RickMorty
+@testable import OpenSeaWidgets
 
 class MockURLSession: URLSessionProtocol {
     var nextDataTask = MockURLSessionDataTask()

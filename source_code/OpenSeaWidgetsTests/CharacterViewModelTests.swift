@@ -1,12 +1,12 @@
 //
 //  CharacterViewModelTests.swift
-//  RickMortyTests
+//  OpenSeaWidgetsTests
 //
 //  Created by Oleksii Skliarenko on 05.07.2021.
 //
 
 import XCTest
-@testable import RickMorty
+@testable import OpenSeaWidgets
 
 class CharacterViewModelTests: XCTestCase {
     

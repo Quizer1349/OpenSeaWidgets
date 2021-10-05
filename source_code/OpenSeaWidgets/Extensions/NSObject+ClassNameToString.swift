@@ -1,6 +1,6 @@
 //
 //  NSObject+ClassNameToString.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 02.07.2021.
 //

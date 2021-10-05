@@ -1,6 +1,6 @@
 //
 //  CharacterViewModel.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 02.07.2021.
 //
@@ -15,7 +15,7 @@ struct AssetViewModel {
     // MARK: Init
     init(asset: Asset) {
         name = asset.name ?? ""
-        imageURL = URL(string: asset.imageURL)
+        imageURL = URL(string: asset.imagePreviewURL ?? asset.imageThumbnailURL ?? asset.animationURL ?? asset.imageURL)
     }
     
     // MARK: Helpers

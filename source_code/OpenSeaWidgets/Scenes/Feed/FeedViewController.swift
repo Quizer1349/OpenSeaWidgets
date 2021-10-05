@@ -1,15 +1,15 @@
 //
 //  CharactersViewController.swift
-//  RickMorty
+//  OpenSeaWidgets
 //
 //  Created by Oleksii Skliarenko on 02.07.2021.
 //
 
 import UIKit
 
-class CharactersViewController: UIViewController {
+class FeedViewController: BaseViewController {
     //MARK: - Props
-    fileprivate let viewModel: CharactersViewModel
+    fileprivate let viewModel: AssetsListViewModel
 
     fileprivate lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
@@ -19,13 +19,13 @@ class CharactersViewController: UIViewController {
     
     //MARK: - Lifecycle
     init() {
-        viewModel = CharactersViewModel()
+        viewModel = AssetsListViewModel()
         super.init(nibName: nil, bundle: nil)
         viewModel.delegate = self
     }
     
     required init?(coder: NSCoder) {
-        viewModel = CharactersViewModel()
+        viewModel = AssetsListViewModel()
         super.init(coder: coder)
         viewModel.delegate = self
     }
@@ -36,11 +36,6 @@ class CharactersViewController: UIViewController {
         viewModel.viewDidLoad()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.setGradientBackground(topColor: Configs.Colors.pink, bottomColor: Configs.Colors.blue)
-    }
-    
     //MARK: - UI setup
     private func setupUI() {
         setupNavigationBar()
@@ -48,14 +43,14 @@ class CharactersViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        title = NSLocalizedString("Characters", comment: "")
+        title = NSLocalizedString("New", comment: "")
     }
 
     private func setupTableView() {
         tableView.backgroundColor = .clear
         view.addSubview(tableView)
         
-        tableView.registerCell(withClass: CharacterTableCell.self)
+        tableView.registerCell(withClass: FeedTableCell.self)
         tableView.registerCell(withClass: LoadingTableCell.self)
         tableView.dataSource = self
         
@@ -74,7 +69,7 @@ class CharactersViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
-extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
+extension FeedViewController: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -100,7 +95,7 @@ extension CharactersViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 // MARK: - HomeViewModelDelegate
-extension CharactersViewController: CharactersViewModelDelegate {
+extension FeedViewController: CharactersViewModelDelegate {
     func dataUpdated(error: Error?) {
         guard error == nil else { return }
         DispatchQueue.main.async {
